@@ -222,6 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function gameOver () {
     if(current.some(index => squares[currentPosition + index].classList.contains('filled'))) {
       scoreDisplay.innerHTML = 'GAME OVER (RELOAD PAGE)'
+      scoreDisplay.style.color = 'red'
       clearInterval(timer)
     }
   }
