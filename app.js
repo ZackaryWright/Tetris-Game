@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // GAME OVER
   function gameOver () {
     if(current.some(index => squares[currentPosition + index].classList.contains('filled'))) {
-      scoreDisplay.innerHTML = 'GAME OVER'
+      scoreDisplay.innerHTML = 'GAME OVER (RELOAD PAGE)'
       clearInterval(timer)
     }
   }
